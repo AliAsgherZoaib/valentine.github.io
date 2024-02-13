@@ -1,0 +1,24 @@
+.valentine-card {
+    text-align: center;
+    font-family: Monospace;
+    font-size: 20px;
+
+}
+
+.response-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#yes-button {
+    background-color: pink;
+    color: white;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+#no-button {
+    background-color: grey;
+    padding: 20px 50px;
+    font-size: 20px;
+}

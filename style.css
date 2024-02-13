@@ -1,0 +1,108 @@
+/* CSS code for the login page */
+
+/* Style the body element */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the container for the background image */
+.bg-img {
+  /* The image is centered and covers the entire container */
+  background-image: url("bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* The height of the container is the same as the viewport height */
+  height: 100vh;
+}
+
+/* Style the container for the login form */
+.container {
+  /* The container is placed at the center of the viewport */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* The container has a white background, rounded corners, and a soft shadow */
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* The container has a fixed width and height */
+  width: 400px;
+  height: 300px;
+  /* The container has some padding and is aligned vertically */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the login form */
+#login-form {
+  /* The form takes up the remaining space of the container */
+  flex: 1;
+  /* The form has some margin and is aligned vertically */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the header of the form */
+#login-form h1 {
+  /* The header has a red color and is capitalized */
+  color: #f44336;
+  text-transform: uppercase;
+}
+
+/* Style the input fields of the form */
+#login-form input {
+  /* The input fields have a fixed width and height */
+  width: 300px;
+  height: 40px;
+  /* The input fields have a red border at the bottom */
+  border: none;
+  border-bottom: 2px solid #f44336;
+  /* The input fields have some padding and margin */
+  padding: 10px;
+  margin: 10px;
+  /* The input fields have a placeholder text that is gray */
+  outline: none;
+  color: black;
+  font-size: 18px;
+  ::placeholder {
+    color: gray;
+  }
+}
+
+/* Style the button of the form */
+#login-form button {
+  /* The button has a fixed width and height */
+  width: 300px;
+  height: 40px;
+  /* The button has a red background color and white text */
+  background-color: #f44336;
+  color: white;
+  /* The button has a border radius and a hover effect */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  :hover {
+    /* The button becomes darker when hovered */
+    background-color: #d32f2f;
+  }
+}
+
+/* Style the container for the error message */
+#error-msg {
+  /* The container has a fixed height and some margin */
+  height: 40px;
+  margin: 10px;
+  /* The container has a red text color and is aligned horizontally and vertically */
+  color: #f44336;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
